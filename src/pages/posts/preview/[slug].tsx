@@ -18,7 +18,7 @@ interface PostPreviewProps {
     }
 }
 
-
+// Gerar apenas um preview do Post para quem não é assinante
 export default function PostPreview({ post }: PostPreviewProps) {
     const[session] = useSession()
     const router = useRouter()
